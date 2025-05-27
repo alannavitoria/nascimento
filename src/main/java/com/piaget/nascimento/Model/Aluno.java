@@ -1,6 +1,15 @@
 package com.piaget.nascimento.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+
+@Entity
+
 public class Aluno {
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     private String nome;
